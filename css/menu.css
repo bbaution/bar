@@ -1,0 +1,38 @@
+body{
+    padding: 0px;
+}
+.nTableMenu{
+    margin-left: 70%;
+}
+.imagenMenu{
+    width: 4rem;
+    height: auto;
+    border-radius: 3px;
+    margin: 3px 3px 3px;
+}
+li{
+    margin: 3px;
+}
+#item >div{
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    background-color: #777777;
+}1
+#item >div>div> p {
+   
+    font-size: 10px;
+}
+.btnItem{
+    display: flex;
+    margin-right: 4px;
+}
+.btnItem > button{
+    margin: 1em 0 0 0;
+    background-color: #FDAF01 ;
+    height: 40px;
+}
+.cantItem{
+    text-align: center;
+    align-self: center;
+}

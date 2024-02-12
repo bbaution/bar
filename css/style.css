@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #131312 ;
+    padding: 30px;
+    color: white;
+}
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
+li {
+    padding-left: 0;
+}
+
+a {
+    color: inherit; 
+    text-decoration: none; 
+}

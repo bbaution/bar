@@ -1,0 +1,24 @@
+ul {
+    padding-left: 0px;
+}
+ul > li {
+    list-style: none;
+
+}
+#mesas{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mesa{
+    margin: 1em;
+    width: 70px;
+    height: 70px;
+    background-color: #FDAF01;
+    color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mesa> a{
+    font-size: 40px;
+}

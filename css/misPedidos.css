@@ -1,0 +1,32 @@
+#nuevoPedido {
+    margin: 0px;
+    background-color: #FDAF01;
+    padding: 1em;
+    border-radius: 2em;
+}
+#nuevoPedido > form {
+ display: flex;
+justify-content: space-around;
+}
+#mesasPedidos {
+    background-color: black;
+    color: white;
+    border-radius: 2em;
+    padding:  .5em;
+}
+#pedidos{
+    padding-left: 0px;
+}
+#pedidos > ul {
+    padding-left: 0px;
+}
+#pedidos > ul >li {
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    background-color: #ffce65;
+    padding: 1rch;
+    border-radius: 2em;
+
+}
