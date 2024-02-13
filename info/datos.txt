@@ -1,0 +1,9 @@
+git clone -> para clonar el repositorio
+git add .  -> para copiar cambios 
+git commit -m 'mensaje' -> guardar cambios
+git push -> para subir cambios
+git pull origin main -> para descargar archivos nuevos 
+git checkout cami/main -> para cambiar de rama 
+git branch -> para crear una nueva rama 
+git merge -> para combinar ramas
+
