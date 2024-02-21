@@ -5,10 +5,11 @@ const price = document.getElementById( "price" );
 const descr = document.getElementById( 'descr' );
 const avaible = document.getElementById('avaible'); 
 const readItem = document.getElementById('readItem');
+const btnAct = document.getElementById('btnAct') ;
+const btnAgr = document.getElementById('btnAgr')
 let auxiliar
 listar()
-
-
+btnAct.hidden=true;
 
 //funciones👇
 async function listar() {
@@ -36,12 +37,15 @@ async function create() {
 }
 async function read(id) {
     try {
+        btnAct.hidden = false;
+        btnAgr.hidden = true;
         auxiliar = id;
         const resp = await axios.get('http://localhost:3000/products/' + id);
         namee.value = resp.data.namee,
         price.value = resp.data.price,
         descr.value = resp.data.description,
         avaible.value = resp.data.avaible;
+        
     } catch (error) {
         console.log(error.message);
     }
@@ -55,4 +59,16 @@ async function eliminar(id){
     } catch (error) {
         console.log(error.message)
     }
+}
+
+async function update() {
+    const resp  = await axios.put(`http://localhost:3000/products/${auxiliar}`, {
+        namee: namee.value,
+        price : price.value,
+        description: descr.value,
+        avaible: avaible.value  
+    })  
+    alert("Actualizado con exito")
+    clearInputs();
+    
 }
