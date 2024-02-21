@@ -21,10 +21,20 @@
     <header>
         
         <a href="./login.html"><i class="fa-solid fa-arrow-left"></i></a>
-        <span class="nTableMenu">Mesa 001</span>
         <h1 class="text-center p-4">Menu</h1>
     </header>
     <main>
+        <div class="inputs">
+            <input id="namee" type="text" placeholder="Nombre...">
+            <input id="price" type="number"  min="0" step=".01" placeholder="Precio...">
+            <input id="descr" type="text"  placeholder="Descripción...">
+            <select name="avaible" id="avaible">
+                <option value="" disabled selected>Disponible</option>
+                <option value="si">si</option>
+                <option value="no">no</option>
+            </select>
+            <button id="btnAgregar" onclick="create()" class="btn btn-warning ms-3"><i class="fa-solid fa-plus"></i></button>
+        </div>
         <ul id="menu">
             
         </ul>

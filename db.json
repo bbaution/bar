@@ -1,48 +1,39 @@
 {
-    "tables": [
-        {
-            "tableId": "01",
-            "cantPers": "04",
-            "avaible": "si"
-        },
-        {
-            "tableId": "02",
-            "cantPers": "04",
-            "avaible": "si"
-        }
-        ,
-        {
-            "tableId": "03",
-            "cantPers": "04",
-            "avaible": "si"
-        }
-        ,
-        {
-            "tableId": "04",
-            "cantPers": "04",
-            "avaible": "si"
-        }
-        ,
-        {
-            "tableId": "05",
-            "cantPers": "04",
-            "avaible": "si"
-        }
-    ],
-    "products": [
-        {
-            "productId": "1",
-            "name": "pizza",
-            "price": "8.99",
-            "description": "Pizza de 6 quesos y tomate.",
-            "avaible": "si"
-        },
-        {
-            "productId": "1",
-            "name": "pizza",
-            "price": "8.99",
-            "description": "Pizza de 6 quesos y tomate.",
-            "avaible": "si"
-        }
-    ]
+  "tables": [
+    {
+      "tableId": "01",
+      "cantPers": "04",
+      "avaible": "si"
+    },
+    {
+      "tableId": "02",
+      "cantPers": "04",
+      "avaible": "si"
+    },
+    {
+      "tableId": "03",
+      "cantPers": "04",
+      "avaible": "si"
+    },
+    {
+      "tableId": "04",
+      "cantPers": "04",
+      "avaible": "si"
+    },
+    {
+      "tableId": "05",
+      "cantPers": "04",
+      "avaible": "si"
+    }
+  ],
+  "products": [
+    {
+      "namee": "pizza",
+      "price": "3132",
+      "description": "nashe",
+      "avaible": "no",
+      "id": 2
+    }
+  ],
+  "order": []
 }
