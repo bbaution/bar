@@ -12,7 +12,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href=" ../css/style.css">
     <link rel="stylesheet" href="../css/misPedidos.css">
-    <script src="/bar/js/orderItem.js" defer></script>
+    <script src="../js/orderItem.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>Menu BAR</title>
 </head>
@@ -25,27 +25,27 @@
     </header>
     <main>
         <div id="nuevoPedido">
-            <form action="">
+            <div>
                 <p>Nuevo Pedido</p>
                 <select name="" id="mesasPedidos">
                     <option value="" disabled selected>Mesas</option>
                 </select>
 
-                <input id="date" type="number">
-                <input id="hour" type="number">
+                <input type="date" name="" id="iDate" disabled>
+                <input type="time" name="" id="iHour" disabled>
 
-               <select name="" id="payment-id">
-                <option value="" disabled selected>01</option>
+               <select name="" id="paymentId">
+                <option value="1"selected>01</option>
                </select>
-               <select name="" id="produc-id">
-                <option value="">01</option>
+               <select name="" id="productId">
+                <option value="1" selected>01</option>
                </select>
-               <select name="" id="user-id">
-                <option value="">01</option>
+               <select name="" id="userId">
+                <option value="1"selected>01</option>
                </select>
                 <button id="btnAgregar" class="btn btn-light" onclick="Guardar()"><i class="fa-solid fa-plus"></i></button>
      
-            </form>
+            </div>
         </div>
         <div class="mt-5 ">
             <ul id="pedidos">

@@ -5,9 +5,9 @@ const btnAgregar = d.getElementById("btn-Agregar");
 const pedidos = d.getElementById("pedidos");
 const date = d.getElementById("date");
 const hour = d.getElementById("hour")
-const product_id = d.getElementById("product-id");
-const payment_id = d.getElementById("payment-id");
-const user_id = d.getElementById("ussser-id");
+const productId = d.getElementById("productId");
+const paymentId = d.getElementById("paymentId");
+const userId = d.getElementById("userId");
 
 
 
@@ -18,7 +18,7 @@ const cargarMesas = async() =>{
         const respMesas = await axios.get("http://localhost:3000/tables")
         mesas.innerHTML = ""  
         respMesas.data.forEach(el => {
-            mesas.innerHTML += '<option value="'+el.tableId+'">'+el.tableId+'</option>'
+            mesas.innerHTML += '<option value="'+el.id+'">'+el.id+'</option>'
             
         });
     } catch (error) {
@@ -34,18 +34,18 @@ const Guardar = async () => {
     try {
         const resp = await axios.post("http://localhost:3000/order",
         {
-             date : date.value,
-            hour : hour.value,
-            productId : product_id.value,
-            paymentId : payment_id.value,
-             userId : user_id.value,
+            date : iDate.value,
+            hour : iHour.value,
+            productId : productId.value,
+            paymentId : paymentId.value,
+            userId : userId.value,
             tableId : mesas.value
 
         });
 
 
     } catch (error) {
-        
+        console.log(error)
     }
     
 
@@ -81,7 +81,22 @@ const Eliminar = async(id) => {
 
 }
 
+//cargar fecha de hoy👇
+const iDate = d.getElementById('iDate')
+const  dateNow = new Date().toISOString().split('T')[0]
+iDate.value=dateNow;
+
+//cargar hora 👇
+function actualizarHora() {
+    const iHour = d.getElementById('iHour')
+    const now = new Date();
+    const timeNow = now.getHours().toString().padStart(2, '0') + ':' + now.getMinutes().toString().padStart(2, '0');
+
+    iHour.value = timeNow
+}
+actualizarHora()
+setInterval(actualizarHora, 600)
+
 //Llamado de funciones
 Listar()
 cargarMesas();
-Eliminar();

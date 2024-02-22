@@ -1,53 +1,28 @@
 {
   "tables": [
     {
+      "id": "01"
+    }
+  ],
+  "products": [],
+  "order": [
+    {
+      "date": "2024-02-22",
+      "hour": "23:01",
+      "productId": "1",
+      "paymentId": "1",
+      "userId": "1",
       "tableId": "01",
-      "cantPers": "04",
-      "avaible": "si",
-      "id": "4559"
+      "id": 1
     },
     {
-      "tableId": "02",
-      "cantPers": "04",
-      "avaible": "si",
-      "id": "e58b"
-    },
-    {
-      "tableId": "03",
-      "cantPers": "04",
-      "avaible": "si",
-      "id": "08a4"
-    },
-    {
-      "tableId": "04",
-      "cantPers": "04",
-      "avaible": "si",
-      "id": "5ede"
-    },
-    {
-      "tableId": "05",
-      "cantPers": "04",
-      "avaible": "si",
-      "id": "dc49"
-    }
-  ],
-  "products": [
-    {
+      "date": "2024-02-22",
+      "hour": "23:01",
       "productId": "1",
-      "name": "pizza",
-      "price": "8.99",
-      "description": "Pizza de 6 quesos y tomate.",
-      "avaible": "si",
-      "id": "1b2f"
-    },
-    {
-      "productId": "1",
-      "name": "pizza",
-      "price": "8.99",
-      "description": "Pizza de 6 quesos y tomate.",
-      "avaible": "si",
-      "id": "fc43"
+      "paymentId": "1",
+      "userId": "1",
+      "tableId": "01",
+      "id": 2
     }
-  ],
-  "order": []
+  ]
 }
