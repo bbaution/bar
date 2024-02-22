@@ -49,32 +49,5 @@
       "id": "fc43"
     }
   ],
-  "order": [
-    {
-      "Id": "",
-      "date": "",
-      "hour": "",
-      "productId": "",
-      "paymentId": "",
-      "userId": "",
-      "tableId": "",
-      "id": "721b"
-    },
-    {
-      "id": "c57d",
-      "tableId": "01"
-    },
-    {
-      "id": "d00d",
-      "tableId": "02"
-    },
-    {
-      "id": "5f2f",
-      "tableId": "01"
-    },
-    {
-      "id": "11db",
-      "tableId": "02"
-    }
-  ]
+  "order": []
 }
