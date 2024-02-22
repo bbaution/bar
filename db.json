@@ -29,10 +29,17 @@
   "products": [
     {
       "namee": "pizzaaaaa",
-      "price": "3132",
+      "price": "31326356",
       "description": "nashe",
-      "avaible": "no",
+      "avaible": "si",
       "id": 2
+    },
+    {
+      "namee": "dasdas",
+      "price": "35234",
+      "description": "aseadas",
+      "avaible": "si",
+      "id": 3
     }
   ],
   "order": []

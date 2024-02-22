@@ -35,6 +35,7 @@ async function create() {
     });
     clearInputs()
 }
+
 async function read(id) {
     try {
         btnAct.hidden = false;
@@ -62,7 +63,7 @@ async function eliminar(id){
 }
 
 async function update() {
-    const resp  = await axios.put(`http://localhost:3000/products/${auxiliar}`, {
+    const resp  = await axios.put('http://localhost:3000/products/' + auxiliar, {
         namee: namee.value,
         price : price.value,
         description: descr.value,
